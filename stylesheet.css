@@ -52,7 +52,7 @@ a, a:visited {
     color: rgb(129, 129, 129)
 }
 
-#link, #username, #content {
+#link, #username, #content, #avatar {
     font-size: 25px;
     background-color: #4e4e4e;
     width: 75%;
