@@ -13,7 +13,14 @@ $(function(){
             alert("Please Fill Out All The Fields");
             return false;
         }
+        
         $.post(link, {"content": content, "username": username, "avatar_url": avatar,});
+        document.getElementById('btn').innerHTML=document.getElementById('message_sent').innerHTML;
 
     });
 });
+
+
+
+
+
