@@ -4,7 +4,7 @@
 -->
 
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="zxx">
   <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,32 +13,57 @@
   <meta name="description" content="Simple Discord Webhook Sender">
   <meta name="keywords" content="discord,zua,webhook">
   <meta name="title" content="Discord Webhook Sender">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
-
-    <div id="header">
-      <h>Discord Webhook Sender</h>
-    </div>
     <div id="container">
       <div class="center-align">
-        <p>Webhook Link:</p><input type='text' id="link" placeholder="Type Webhook URL here ex. https://discordapp.com/api/webhooks/462759446225879041/CX-NNGFq5zjht82fQSJUTN2Or2DGq8UTwoIlhHgZ7lTJ6-wlHlRshIRuOC0nE6frfSwG">
-        <p>Bot Username:</p><input type="text" id="username" placeholder="Type the Username of the Webhook here * OPTIONAL" value="ZuaWebhookSender">
-        <p>Avatar URL:</p><input type="text" id="avatar" placeholder="Image URL">
-        <p>Content:</p><input type="text" id="content" placeholder="Type the Content of the Webhook here">
-        <br>
-        <button id="btn">Send</button>
-        <center>
-       <!--JS log in the works atm-->
-        <p id='log'></p>
-      </center>
-    </div>
-  </div> 
-  </div>
+        <div class="login-register-area ptb-130">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-7 ml-auto mr-auto">
+                      <div class="login-register-wrapper">
+                          <div class="login-register-tab-list nav">
+                              <h2> Discord Webhook Sender </h2>
+                          </div>
+                          <div class="tab-content">
+                              <div id="lg1" class="tab-pane active">
+                                  <div class="login-form-container">
+                                      <div class="login-form" style="text-align: center;">
+                                        <p><h4>Webhook Link:</h4></p><input style="text-align: center;" type='text' id="link" placeholder="Type Webhook URL here ex. https://discordapp.com/api/webhooks/462759446225879041/CX-NNGFq5zjht82fQSJUTN2Or2DGq8UTwoIlhHgZ7lTJ6-wlHlRshIRuOC0nE6frfSwG">
+                                        <p><h4>Bot Username:</h4></p><input style="text-align: center;" type="text" id="username" placeholder="Type the Username of the Webhook here * OPTIONAL" value="">
+                                        <p><h4>Avatar URL:</h4></p><input style="text-align: center;" type="text" id="avatar" placeholder="Image URL">
+                                        <p><h4>Content:</h4></p><input style="text-align: center;" type="text" id="content" placeholder="Type the Content of the Webhook here">
+                                        <br>
+                                        <button id="btn" class="btn-style cr-btn" style="cursor: pointer;">Send</button>
+                                        <div id="message_sent" style="visibility:hidden">Message Sent!</div>
+                                        <center>
+                                          <!--JS log in the works atm-->
+                                          <p id='log'></p>
+                                        </center>
+                                      </div>
+                                  </div> 
+                                </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+   </div>
   <div id="footer">
     Copyright &copy; <a href="http://github.com/thatziv/">Zua</a>
+    <div style="position: relative; float: right;">
+      HTML Design by <a href="http://https://github.com/AndoreKun/">AndoreKun</a>
+    </div>
   </div>
- <script src="jquery.js"></script>
+  <!-- js -->
+
+  <script src="jquery.js"></script>
   <script src="main.js"></script>
-  </body>
+</body>
 </html>
